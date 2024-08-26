@@ -3,6 +3,7 @@ const { bot, groqResponse } = require('../lib')
 bot(
   {
     pattern: 'groq ?(.*)',
+    fromMe: true,
     desc: 'groq ai',
     type: 'AI',
   },

@@ -4,6 +4,7 @@ const { bot, gemini } = require('../lib')
 bot(
   {
     pattern: 'gemini ?(.*)',
+    fromMe: true,
     desc: 'google gemini',
     type: 'ai',
   },

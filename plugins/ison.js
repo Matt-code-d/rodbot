@@ -3,6 +3,7 @@ const { bot, PREFIX, getNumbers, jidToNum } = require('../lib')
 bot(
   {
     pattern: 'ison ?(.*)',
+    fromMe: true,
     desc: 'List number in whatsapp',
     type: 'search',
   },

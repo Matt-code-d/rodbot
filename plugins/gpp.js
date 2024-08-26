@@ -1,8 +1,10 @@
 const { bot, isAdmin } = require('../lib/')
+const fm = true
 
 bot(
 	{
 		pattern: 'gpp ?(.*)',
+		fromMe: fm,
 		desc: 'change group icon',
 		type: 'group',
 		onlyGroup: true,

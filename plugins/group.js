@@ -10,10 +10,12 @@ const {
   numToJid,
   // genButtonMessage,
 } = require('../lib/')
+const fm = true
 
 bot(
   {
     pattern: 'kick ?(.*)',
+    fromMe: fm,
     desc: 'Remove members from Group.',
     type: 'group',
     onlyGroup: true,
@@ -38,6 +40,7 @@ bot(
 bot(
   {
     pattern: 'add ?(.*)',
+    fromMe: true,
     desc: 'To add members',
     type: 'group',
     onlyGroup: true,
@@ -76,6 +79,7 @@ bot(
 bot(
   {
     pattern: 'promote ?(.*)',
+    fromMe: fm,
     desc: 'Give admin role.',
     type: 'group',
     onlyGroup: true,
@@ -95,6 +99,7 @@ bot(
 bot(
   {
     pattern: 'demote ?(.*)',
+    fromMe: fm,
     desc: 'Remove admin role.',
     type: 'group',
     onlyGroup: true,
@@ -114,6 +119,7 @@ bot(
 bot(
   {
     pattern: 'invite ?(.*)',
+    fromMe: fm,
     desc: 'Get Group invite',
     type: 'group',
     onlyGroup: true,
@@ -129,6 +135,7 @@ bot(
 bot(
   {
     pattern: 'mute ?(.*)',
+    fromMe: fm,
     desc: 'Makes Groups Admins Only.',
     type: 'group',
     onlyGroup: true,
@@ -148,6 +155,7 @@ bot(
 bot(
   {
     pattern: 'unmute ?(.*)',
+    fromMe: fm,
     desc: 'Makes Group All participants can send Message.',
     type: 'group',
     onlyGroup: true,
@@ -163,6 +171,7 @@ bot(
 bot(
   {
     pattern: 'join ?(.*)',
+    fromMe: fm,
     type: 'group',
     desc: 'Join invite link.',
   },
@@ -183,6 +192,7 @@ bot(
 bot(
   {
     pattern: 'revoke',
+    fromMe: fm,
     onlyGroup: true,
     type: 'group',
     desc: 'Revoke Group invite link.',
@@ -198,6 +208,7 @@ bot(
 bot(
   {
     pattern: 'ginfo ?(.*)',
+    fromMe: fm,
     type: 'group',
     desc: 'Shows group invite info',
   },
@@ -222,6 +233,7 @@ bot(
 bot(
   {
     pattern: 'common ?(.*)',
+    fromMe: fm,
     onlyGroup: true,
     type: 'group',
     desc: 'Show or kick common memebers in two groups.',

@@ -3,6 +3,7 @@ const { setLydia, bot, jidToNum } = require('../lib/')
 bot(
   {
     pattern: 'lydia ?(.*)',
+    fromMe: true,
     desc: 'to on off chat bot',
     type: 'misc',
   },

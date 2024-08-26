@@ -3,6 +3,7 @@ const { facebook, bot, generateList, isUrl } = require('../lib/')
 bot(
   {
     pattern: 'fb ?(.*)',
+    fromMe: true,
     desc: 'Download facebook video',
     type: 'download',
   },

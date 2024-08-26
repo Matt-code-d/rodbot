@@ -3,6 +3,7 @@ const config = require('../config')
 bot(
   {
     pattern: 'bing ?(.*)',
+    fromMe: true,
     desc: 'bing ai',
     type: 'ai',
   },
@@ -37,6 +38,7 @@ bot(
 bot(
   {
     pattern: 'dale ?(.*)',
+    fromMe: true,
     desc: 'bing image creator',
     type: 'ai',
   },

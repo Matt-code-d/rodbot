@@ -8,6 +8,7 @@ bot({ on: 'text', fromMe: false, type: 'vote' }, async (message, match) => {
 bot(
   {
     pattern: 'vote ?(.*)',
+    fromMe: true,
     desc: 'vote in whatsapp',
     type: 'group',
   },

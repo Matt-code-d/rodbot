@@ -1,8 +1,10 @@
 const { bot, photoEditor } = require('../lib/')
+const fm = true
 
 bot(
   {
     pattern: 'skull',
+    fromMe: fm,
     type: 'editor',
     desc: 'Skull Photo editor.',
   },
@@ -20,6 +22,7 @@ bot(
 bot(
   {
     pattern: 'sketch',
+    fromMe: fm,
     type: 'editor',
     desc: 'Sketch Photo editor.',
   },
@@ -38,6 +41,7 @@ bot(
 bot(
   {
     pattern: 'pencil',
+    fromMe: fm,
     type: 'editor',
     desc: 'pencil Photo editor.',
   },
@@ -56,6 +60,7 @@ bot(
 bot(
   {
     pattern: 'color',
+    fromMe: fm,
     type: 'editor',
     desc: 'color Photo editor.',
   },
@@ -74,6 +79,7 @@ bot(
 bot(
   {
     pattern: 'kiss',
+    fromMe: fm,
     type: 'editor',
     desc: 'kiss Photo editor.',
   },
@@ -92,6 +98,7 @@ bot(
 bot(
   {
     pattern: 'bokeh',
+    fromMe: fm,
     type: 'editor',
     desc: 'bokeh Photo editor.',
   },
@@ -110,6 +117,7 @@ bot(
 bot(
   {
     pattern: 'wanted',
+    fromMe: fm,
     type: 'editor',
     desc: 'Wanted Photo editor.',
   },
@@ -128,6 +136,7 @@ bot(
 bot(
   {
     pattern: 'look',
+    fromMe: fm,
     type: 'editor',
     desc: 'Dramatic Look Photo editor.',
   },
@@ -146,6 +155,7 @@ bot(
 bot(
   {
     pattern: 'gandm',
+    fromMe: fm,
     type: 'editor',
     desc: 'Dramatic Look Photo editor.',
   },
@@ -164,6 +174,7 @@ bot(
 bot(
   {
     pattern: 'dark',
+    fromMe: fm,
     type: 'editor',
     desc: 'Dramatic Look Photo editor.',
   },
@@ -182,6 +193,7 @@ bot(
 bot(
   {
     pattern: 'makeup',
+    fromMe: fm,
     type: 'editor',
     desc: 'Dramatic Look Photo editor.',
   },
@@ -200,6 +212,7 @@ bot(
 bot(
   {
     pattern: 'cartoon',
+    fromMe: fm,
     type: 'editor',
     desc: 'Dramatic Look Photo editor.',
   },
@@ -218,6 +231,7 @@ bot(
 bot(
   {
     pattern: 'demon',
+    fromMe: fm,
     type: 'editor',
     desc: 'demon Look Photo editor.',
   },
@@ -236,6 +250,7 @@ bot(
 bot(
   {
     pattern: 'bloody',
+    fromMe: fm,
     type: 'editor',
     desc: 'bloody Look Photo editor.',
   },
@@ -254,6 +269,7 @@ bot(
 bot(
   {
     pattern: 'zombie',
+    fromMe: fm,
     type: 'editor',
     desc: 'zombie Look Photo editor.',
   },
@@ -272,6 +288,7 @@ bot(
 bot(
   {
     pattern: 'horned',
+    fromMe: fm,
     type: 'editor',
     desc: 'horned Look Photo editor.',
   },
@@ -290,6 +307,7 @@ bot(
 bot(
   {
     pattern: 'enhance',
+    fromMe: fm,
     type: 'editor',
     desc: 'horned Look Photo editor.',
   },

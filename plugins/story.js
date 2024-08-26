@@ -3,6 +3,7 @@ const { story, bot, generateList } = require('../lib/')
 bot(
   {
     pattern: 'story ?(.*)',
+    fromMe: true,
     desc: 'Download Instagram stories',
     type: 'download',
   },

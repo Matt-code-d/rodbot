@@ -13,6 +13,7 @@ const fm = true
 bot(
   {
     pattern: 'jid',
+    fromMe: fm,
     desc: 'Give jid of chat/user',
     type: 'user',
   },
@@ -24,6 +25,7 @@ bot(
 bot(
   {
     pattern: 'left',
+    fromMe: fm,
     dec: 'To leave from group',
     type: 'user',
     onlyGroup: true,
@@ -37,6 +39,7 @@ bot(
 bot(
   {
     pattern: 'block',
+    fromMe: fm,
     desc: 'Block a person',
     type: 'user',
   },
@@ -51,6 +54,7 @@ bot(
 bot(
   {
     pattern: 'unblock',
+    fromMe: fm,
     desc: 'Unblock a person',
     type: 'user',
   },
@@ -65,6 +69,7 @@ bot(
 bot(
   {
     pattern: 'pp',
+    fromMe: fm,
     desc: 'Change Profile Picture',
     type: 'user',
   },
@@ -79,6 +84,7 @@ bot(
 bot(
   {
     pattern: 'whois ?(.*)',
+    fromMe: fm,
     desc: 'To get PP and about',
     type: 'misc',
   },
@@ -117,6 +123,7 @@ bot(
 bot(
   {
     pattern: 'gjid',
+    fromMe: fm,
     desc: 'List group jids',
     type: 'user',
   },

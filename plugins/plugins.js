@@ -15,6 +15,7 @@ const { writeFileSync, unlinkSync } = require('fs')
 bot(
   {
     pattern: 'plugin ?(.*)',
+    fromMe: true,
     desc: 'Install External plugins',
     type: 'plugin',
   },
@@ -67,6 +68,7 @@ bot(
 bot(
   {
     pattern: 'remove ?(.*)',
+    fromMe: true,
     desc: 'Delete External Plugins',
     type: 'plugin',
   },

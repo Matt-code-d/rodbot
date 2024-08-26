@@ -12,18 +12,19 @@ const {
 bot(
   {
     pattern: 'welcome ?(.*)',
+    fromMe: true,
     desc: 'Welcome new members',
     onlyGroup: true,
     type: 'group',
   },
   async (message, match) => {
     const welcome = await getMessage(message.jid, 'welcome')
-    if (!match && !welcome) return await message.send('*Example : welcome Hi &mention*')
+    if (!match && !welcome) return await message.send('*Esempio : Benvenuto &mention*')
     if (!match) {
       await message.send(welcome.message)
       const onOrOff = welcome && welcome.enabled ? 'on' : 'off'
       return await message.send(
-        `Welcome is ${onOrOff}\n\nhttps://github.com/lyfe00011/levanter/wiki/Greetings`
+        `Welcome is ${onOrOff}\n\nhttps://github.com/lyfe00011//whatsapp-bot-md/wiki/Greetings`
       )
       // const button = await genButtonMessage(
       // 	[{ id: `welcome ${onOrOff}`, text: onOrOff.toUpperCase() }],
@@ -69,6 +70,7 @@ bot(
 bot(
   {
     pattern: 'goodbye ?(.*)',
+    fromMe: true,
     desc: 'Goodbye members',
     onlyGroup: true,
     type: 'group',
@@ -80,7 +82,7 @@ bot(
       await message.send(welcome.message)
       const onOrOff = welcome && welcome.enabled ? 'on' : 'off'
       return await message.send(
-        `Goodbye is ${onOrOff}\n\nhttps://github.com/lyfe00011/levanter/wiki/Greetings`
+        `Goodbye is ${onOrOff}\n\nhttps://github.com/lyfe00011//whatsapp-bot-md/wiki/Greetings`
       )
 
       // const button = await genButtonMessage(

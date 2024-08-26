@@ -6,6 +6,7 @@ const {
 bot(
   {
     pattern: 'status ?(.*)',
+    fromMe: true,
     desc: 'Auto Status view',
     type: 'whatsapp',
   },
@@ -42,6 +43,7 @@ bot(
 bot(
   {
     pattern: 'call ?(.*)',
+    fromMe: true,
     desc: 'Auto reject call Manager',
     type: 'whatsapp',
   },
@@ -78,6 +80,7 @@ bot(
 bot(
   {
     pattern: 'read ?(.*)',
+    fromMe: true,
     desc: 'Auto read Message',
     type: 'whatsapp',
   },
@@ -114,6 +117,7 @@ bot(
 bot(
   {
     pattern: 'online ?(.*)',
+    fromMe: true,
     desc: 'Always Online',
     type: 'whatsapp',
   },

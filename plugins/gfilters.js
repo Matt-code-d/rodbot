@@ -1,8 +1,10 @@
 const { getFilter, bot, setFilter, deleteFilter } = require('../lib')
+const fm = true
 
 bot(
   {
     pattern: 'gstop ?(.*)',
+    fromMe: fm,
     desc: 'Delete gfilters in all group',
     type: 'autoReply',
   },
@@ -17,6 +19,7 @@ bot(
 bot(
   {
     pattern: 'pstop ?(.*)',
+    fromMe: fm,
     desc: 'Delete pfilters in all chat',
     type: 'autoReply',
   },
@@ -31,6 +34,7 @@ bot(
 bot(
   {
     pattern: 'gfilter ?(.*)',
+    fromMe: fm,
     desc: 'gfilter in all groups',
     type: 'autoReply',
   },
@@ -60,6 +64,7 @@ bot(
 bot(
   {
     pattern: 'pfilter ?(.*)',
+    fromMe: fm,
     desc: 'pfilter in all chat',
     type: 'autoReply',
   },

@@ -3,6 +3,7 @@ const { bot, isUrl, takeScreenshot } = require('../lib/')
 bot(
   {
     pattern: 'ss ?(.*)',
+    fromMe: true,
     desc: 'Take web page screenshot',
     type: 'download',
   },
@@ -18,6 +19,7 @@ bot(
 bot(
   {
     pattern: 'fullss ?(.*)',
+    fromMe: true,
     desc: 'Take web page screenshot',
     type: 'download',
   },

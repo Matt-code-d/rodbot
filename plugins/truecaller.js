@@ -3,6 +3,7 @@ const { bot, truecaller, jidToNum, delTruecaller, getTruecaller } = require('../
 bot(
   {
     pattern: 'truecaller ?(.*)',
+    fromMe: true,
     desc: 'search number in truecaller',
     type: 'search',
   },

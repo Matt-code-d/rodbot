@@ -3,6 +3,7 @@ const { bot, IsSpotify, isUrl, dowloadTrack, getSpotifyPlaylist } = require('../
 bot(
   {
     pattern: 'spotify ?(.*)',
+    fromMe: true,
     desc: 'download track or playlist',
     type: 'download',
   },

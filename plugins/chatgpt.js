@@ -3,6 +3,7 @@ const { bot, getGPTResponse, getDallEResponse } = require('../lib')
 bot(
   {
     pattern: 'gpt ?(.*)',
+    fromMe: true,
     desc: 'ChatGPT fun',
     type: 'AI',
   },
@@ -17,6 +18,7 @@ bot(
 bot(
   {
     pattern: 'dall ?(.*)',
+    fromMe: true,
     desc: 'dall image generator',
     type: 'AI',
   },

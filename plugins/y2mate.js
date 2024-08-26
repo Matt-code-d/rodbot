@@ -13,6 +13,7 @@ const ytIdRegex =
 bot(
   {
     pattern: 'ytv ?(.*)',
+    fromMe: true,
     desc: 'Download youtube video',
     type: 'download',
   },
@@ -65,6 +66,7 @@ bot(
 bot(
   {
     pattern: 'yta ?(.*)',
+    fromMe: true,
     desc: 'Download youtube audio',
     type: 'download',
   },

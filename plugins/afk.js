@@ -10,6 +10,7 @@ global.AFK = {
 bot(
   {
     pattern: 'afk ?(.*)',
+    fromMe: true,
     desc: 'away from keyboard',
     type: 'misc',
   },

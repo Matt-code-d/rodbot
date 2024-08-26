@@ -1,8 +1,10 @@
 const { getFilter, bot, setFilter, deleteFilter, lydia } = require('../lib/')
+const fm = true
 
 bot(
   {
     pattern: 'stop ?(.*)',
+    fromMe: fm,
     desc: 'Delete filters in chat',
     type: 'group',
     onlyGroup: true,
@@ -18,6 +20,7 @@ bot(
 bot(
   {
     pattern: 'filter ?(.*)',
+    fromMe: fm,
     desc: 'filter in groups',
     type: 'group',
     onlyGroup: true,

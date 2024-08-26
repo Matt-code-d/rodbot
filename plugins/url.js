@@ -3,6 +3,7 @@ const { bot, getUrl } = require('../lib/')
 bot(
   {
     pattern: 'url ?(.*)',
+    fromMe: true,
     desc: 'Image/Video to url',
     type: 'misc',
   },

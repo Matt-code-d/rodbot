@@ -2,6 +2,7 @@ const { bot, wcg } = require('../lib/')
 bot(
   {
     pattern: 'wcg ?(.*)',
+    fromMe: true,
     desc: 'word chain game\nwcg start to force start game',
     type: 'game',
   },
@@ -19,6 +20,7 @@ bot(
 bot(
   {
     pattern: 'wrg ?(.*)',
+    fromMe: true,
     desc: 'random word game\nwrg start to force start game',
     type: 'game',
   },

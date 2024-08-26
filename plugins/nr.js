@@ -3,6 +3,7 @@ const { bot, zushi, yami, ope, jidToNum } = require('../lib/')
 bot(
   {
     pattern: 'zushi ?(.*)',
+    fromMe: true,
     desc: 'allow set commands to be used by others in chat',
     type: 'logia',
   },
@@ -26,6 +27,7 @@ bot(
 bot(
   {
     pattern: 'yami ?(.*)',
+    fromMe: true,
     desc: 'shows the commands',
     type: 'logia',
   },
@@ -44,6 +46,7 @@ bot(
 bot(
   {
     pattern: 'ope ?(.*)',
+    fromMe: true,
     desc: 'delete or unset the command',
     type: 'logia',
   },

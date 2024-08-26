@@ -11,6 +11,7 @@ const {
 bot(
   {
     pattern: 'setschedule ?(.*)',
+    fromMe: true,
     desc: 'To set Schedule Message',
     type: 'schedule',
   },
@@ -32,6 +33,7 @@ bot(
 bot(
   {
     pattern: 'getschedule ?(.*)',
+    fromMe: true,
     desc: 'To get all Schedule Message',
     type: 'schedule',
   },
@@ -50,14 +52,13 @@ bot(
 bot(
   {
     pattern: 'delschedule ?(.*)',
+    fromMe: true,
     desc: 'To delete Schedule Message',
     type: 'schedule',
   },
   async (message, match) => {
     if (!match)
-      return await message.send(
-        '> *Example :*\n- delschedule 9198765431@s.whatsapp.net, 8-8-10-10\n- delschedule 9198765431@s.whatsapp.net\n- delschedule all'
-      )
+      return await message.send('> *Example :*\n- delschedule 9198765431@s.whatsapp.net, 8-8-10-10\n- delschedule 9198765431@s.whatsapp.net\n- delschedule all')
     const [jid, time] = match.split(',')
     let [isJid] = parsedJid(jid)
     const isTimeValid = validateTime(time)

@@ -3,6 +3,7 @@ const { bot } = require('../lib/')
 bot(
 	{
 		pattern: 'clear ?(.*)',
+		fromMe: true,
 		desc: 'delete whatsapp chat',
 		type: 'whatsapp',
 	},

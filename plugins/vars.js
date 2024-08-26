@@ -3,6 +3,7 @@ const { bot, setVar, getVars, delVar } = require('../lib/index')
 bot(
   {
     pattern: 'getvar ?(.*)',
+    fromMe: true,
     desc: 'Show var',
     type: 'vars',
   },
@@ -18,6 +19,7 @@ bot(
 bot(
   {
     pattern: 'delvar ?(.*)',
+    fromMe: true,
     desc: 'delete var',
     type: 'vars',
   },
@@ -34,6 +36,7 @@ bot(
 bot(
   {
     pattern: 'setvar ?(.*)',
+    fromMe: true,
     desc: 'set var',
     type: 'vars',
   },
@@ -51,6 +54,7 @@ bot(
 bot(
   {
     pattern: 'allvar ?(.*)',
+    fromMe: true,
     desc: 'Show All var',
     type: 'vars',
   },

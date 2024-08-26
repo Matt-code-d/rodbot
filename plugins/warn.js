@@ -11,6 +11,7 @@ const {
 bot(
   {
     pattern: 'warn ?(.*)',
+    fromMe: true,
     desc: 'warn users in chat',
     type: 'group',
     onlyGroup: true,

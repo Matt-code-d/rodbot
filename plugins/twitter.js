@@ -3,6 +3,7 @@ const { twitter, bot, generateList, isUrl } = require('../lib/')
 bot(
   {
     pattern: 'twitter ?(.*)',
+    fromMe: true,
     desc: 'Download twitter video',
     type: 'download',
   },

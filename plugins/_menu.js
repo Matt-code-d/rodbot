@@ -13,6 +13,7 @@ const { VERSION } = require('../config')
 bot.addCommand(
   {
     pattern: 'help ?(.*)',
+    fromMe: true,
     dontAddCommandList: true,
   },
   async (message, match) => {
@@ -24,7 +25,7 @@ bot.addCommand(
     })
     const [date, time] = getDate()
     let CMD_HELP = `╭────────────────╮
-						ʟᴇᴠᴀɴᴛᴇʀ
+						SANTOROD BOT
 ╰────────────────╯
 
 ╭────────────────
@@ -58,6 +59,7 @@ bot.addCommand(
 bot.addCommand(
   {
     pattern: 'list ?(.*)',
+    fromMe: true,
     dontAddCommandList: true,
   },
   async (message, match) => {
@@ -79,6 +81,7 @@ bot.addCommand(
 bot.addCommand(
   {
     pattern: 'menu ?(.*)',
+    fromMe: true,
     dontAddCommandList: true,
   },
   async (message, match) => {
@@ -93,7 +96,7 @@ bot.addCommand(
       }
     })
     const [date, time] = getDate()
-    let msg = `\`\`\`╭═══ LEVANTER ═══⊷
+    let msg = `\`\`\`╭═══ SANTOROD BOT ═══⊷
 ┃❃╭──────────────
 ┃❃│ Prefix : ${PREFIX}
 ┃❃│ User : ${message.pushName}
